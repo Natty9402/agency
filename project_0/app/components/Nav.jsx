@@ -12,20 +12,12 @@ const Nav = () => {
       link: "/",
     },
     {
-      name: "placehold1",
+      name: "services",
       link: "/placehold1",
     },
     {
-      name: "placehold2",
+      name: "work",
       link: "/placehold3",
-    },
-    {
-      name: "vision",
-      link: "/vision",
-    },
-    {
-      name: "contact",
-      link: "/contact",
     },
   ];
 
@@ -33,7 +25,7 @@ const Nav = () => {
 
   return (
     <div>
-      <div className="flex gap-8 items-center">
+      <div className="flex gap-8 items-center text-2xl p-3 bg-secondary rounded">
         {links.map((link, index) => {
           return (
             <Link
