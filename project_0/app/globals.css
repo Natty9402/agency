@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: rgb(27, 26, 26);
-  color: white;
+@layer base {
+  body {
+    @apply font-primary bg-secondary text-white leading-loose;
+  }
 }
