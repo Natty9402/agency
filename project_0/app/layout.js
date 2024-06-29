@@ -1,15 +1,17 @@
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import Header from "./components/Header";
 import "./globals.css";
 import PageTransition from "@/app/components/PageTransition";
 import StairTransition from "@/app/components/ui/StairTransition";
+import Footer from "./components/Footer";
+import ContactSm from "./components/head_contact/ContactSm";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const play = Playfair_Display({
+export const roboto = Roboto_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-PlayfairDisplay",
+  weight: ["100", "200", "300", "400", "500", "600"],
+  variable: "--Roboto_Mono",
 });
 
 export const metadata = {
@@ -20,10 +22,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={play.variable}>
+      <body className={roboto.variable}>
+        <ContactSm />
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        {/* <Footer /> */}
       </body>
     </html>
   );

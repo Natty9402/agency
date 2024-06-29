@@ -7,12 +7,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary: "var(--font-PlayfairDisplay)",
+      primary: "var(--Roboto_Mono)",
     },
     extend: {
       colors: {
-        primary: "#f09b36",
-        secondary: "#21201e",
+        primary: "#ffffff",
+        secondary: "#000000",
+        third: "#b1b5a8",
       },
 
       keyframes: {

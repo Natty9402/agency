@@ -12,8 +12,8 @@ const Nav = () => {
       link: "/",
     },
     {
-      name: "services",
-      link: "/placehold1",
+      name: "pricing",
+      link: "/pricing",
     },
     {
       name: "work",
@@ -25,7 +25,7 @@ const Nav = () => {
 
   return (
     <div>
-      <div className="flex gap-8 items-center text-2xl p-3 bg-secondary rounded">
+      <div className="flex gap-8 items-center text-2xl p-3  rounded">
         {links.map((link, index) => {
           return (
             <Link
@@ -33,14 +33,13 @@ const Nav = () => {
               key={index}
               className={`${
                 pathName === link.link &&
-                "text-orange-300 border-b-2 border-orange-300"
-              } capitalize font-bold hover:text-orange-400 transition-all`}
+                "font-extrabold border-b-2 border-primary"
+              } text-primary capitalize font-bold hover:border-b-2  transition-all`}
             >
               {link.name}
             </Link>
           );
         })}
-        <NavButton />
       </div>
     </div>
   );
