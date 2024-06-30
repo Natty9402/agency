@@ -29,9 +29,9 @@ const Info = () => {
 
   return (
     <div className="w-screen   bg-primary text-secondary p-5">
-      <div className=" my-12 ">
+      <div className=" mt-12 ">
         {/* header text */}
-        <div className="flex flex-col items-start  justify-start lg:text-left p-5 mx-10 border-b border-secondary">
+        <div className="flex flex-col items-start  justify-start lg:text-left p-1 lg:p-5 mx-10 border-b border-secondary">
           <h1
             className="text-2xl lg:text-4xl  text-left capitalize my-5 font-bold"
             data-aos="fade-up"
@@ -64,7 +64,7 @@ const Info = () => {
             >
               {/* backround-image */}
               <div
-                className="absolute inset-0 bg-cover -z-10 bg-center bg-no-repeat transition-opacity duration-300 opacity-50 lg:opacity-0 group-hover:opacity-40 "
+                className="absolute inset-0 bg-cover -z-10 bg-center bg-no-repeat transition-opacity duration-300 opacity-35 lg:opacity-0 group-hover:opacity-50 "
                 style={{ backgroundImage: `url(${info.img})` }}
               ></div>
               <div className="flex flex-col  lg:p-5 items-start justify-center  lg:text-left  lg:mx-10 text-left">

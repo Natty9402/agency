@@ -7,3 +7,7 @@
     @apply font-primary bg-secondary text-white leading-loose;
   }
 }
+
+html {
+  overflow-x: hidden;
+}

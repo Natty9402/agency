@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Info from "./components/info_sec/Info";
+import MiniH from "./components/MiniH";
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="my-24" id="hero">
+      <section className="my-24 w-screen" id="hero">
         <div className="h-3 bg-gradient-to-b from-secondary to-transparent border-0" />
         <div className="container mx-0  md:mx-auto  mt-0 p-2 md:p-8 lg:p12">
           <div className="flex flex-col  items-center  justify-center ">
@@ -30,10 +31,10 @@ export default function Home() {
                   Ethiopia<span className="text-sm md:text-4xl">.</span>
                 </h2>
               </div>
-              <p className="text-1xl md:text-2xl my-5 tracking-wider text-center font-bold text-black ">
+              <p className="text-1xl md:text-2xl my-12 tracking-wider text-center font-bold text-black ">
                 Empower Your Business With Innovative Web Solutions
               </p>
-              <HeorButtons />
+              {/* <HeorButtons /> */}
             </div>
             {/* Image */}
           </div>
@@ -42,6 +43,7 @@ export default function Home() {
       </section>
       <Services />
       <Info />
+      <MiniH />
     </>
   );
 }

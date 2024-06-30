@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ContactSm = () => {
   return (
-    <div className="fixed top-0 w-full flex items-center justify-center bg-primary text-secondary gap-20 z-10 ">
+    <div className="fixed top-0 w-screen flex items-center justify-evenly bg-primary text-secondary  z-10 ">
       <div className="flex gap-2 justify-center items-center">
         <Phone />
         <h1 className="tracking-tighter font-bold">09-00-42-44-37</h1>
